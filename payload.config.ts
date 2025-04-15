@@ -1,17 +1,4 @@
-type CollectionConfig = {
-  slug: string;
-  labels?: {
-    singular?: string;
-    plural?: string;
-  };
-  fields: any[];
-  access?: any;
-  admin?: any;
-  hooks?: any;
-  versions?: any;
-  timestamps?: boolean;
-};
-
+import type { CollectionConfig } from 'payload/types';
 
 const Pages: CollectionConfig = {
   slug: 'pages',
@@ -50,8 +37,9 @@ const RSSFeeds: CollectionConfig = {
   ]
 };
 
-export default {
-  cors: ['http://137.184.80.109:3002'], // 👈 Frontend origin for CORS
+const config ={
+  collections: [Pages, Blog, RSSFeeds],
+  cors: ['http://137.184.80.109:3002'],
   admin: {
     user: 'users',
     disableSSR: true,
@@ -60,5 +48,6 @@ export default {
       return config;
     },
   },
-  collections: [Pages, Blog, RSSFeeds],
 };
+
+export default config;

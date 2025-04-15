@@ -78,7 +78,7 @@ console.log('🧠 Payload.init config summary:', {
 
 (async () => {
   await nextApp.prepare();
-  await payload.init(payloadConfig);
+  await payload.init(payloadConfig as any);
 
   app.all('*', (req, res) => handle(req, res));
 

@@ -1,3 +1,4 @@
+
 declare module 'payload/types' {
   export interface CollectionConfig {
     slug: string;
@@ -14,3 +15,4 @@ declare module 'payload/types' {
   }
 }
 
+declare module 'payload/config';

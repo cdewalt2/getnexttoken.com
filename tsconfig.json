@@ -33,7 +33,7 @@
       "@payload-config": [
         "./src/payload.config.ts"
       ],
-      "payload/types": ["src/@shims/payload/types.d.ts"]
+
     }
   },
   "include": [

@@ -7,4 +7,4 @@ await payload.init({
   onInit: async () => {
     console.log('✅ Payload started up with a minimal config');
   }
-});
+} as any);
