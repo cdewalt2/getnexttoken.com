@@ -1,0 +1,91 @@
+Project Structure Summary — Tue Apr  1 15:04:50 UTC 2025
+.
+├── Dockerfile
+├── README.md
+├── app
+│   ├── frontend
+│   │   └── page.tsx
+│   ├── layout.tsx
+│   └── page.tsx
+├── cross-env
+├── dev
+├── docker-compose.yml
+├── eslint.config.mjs
+├── frontend
+│   ├── README.md
+│   ├── app
+│   │   ├── favicon.ico
+│   │   ├── globals.css
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   ├── next-env.d.ts
+│   ├── next.config.ts
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── postcss.config.mjs
+│   ├── public
+│   │   ├── file.svg
+│   │   ├── globe.svg
+│   │   ├── next.svg
+│   │   ├── vercel.svg
+│   │   └── window.svg
+│   └── tsconfig.json
+├── main
+│   ├── Dockerfile
+│   ├── README.md
+│   ├── docker-compose.yml
+│   ├── eslint.config.mjs
+│   ├── next-env.d.ts
+│   ├── next.config.mjs
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── src
+│   │   ├── app
+│   │   ├── collections
+│   │   ├── payload-types.ts
+│   │   └── payload.config.ts
+│   └── tsconfig.json
+├── next-env.d.ts
+├── next.config.mjs
+├── package-lock.json
+├── package.json
+├── pages
+│   └── test.js
+├── payload.config.ts
+├── project-structure-summary.txt
+├── scripts
+│   └── fetchRSS.ts
+├── src
+│   ├── app
+│   │   ├── (frontend)
+│   │   ├── (payload)
+│   │   └── my-route
+│   ├── collections
+│   │   ├── Blog.ts
+│   │   ├── Media.ts
+│   │   ├── Pages.ts
+│   │   ├── RSSFeeds.ts
+│   │   └── Users.ts
+│   ├── payload-types.ts
+│   └── payload.config.ts
+├── tsconfig.json
+└── udo nginx -t
+
+18 directories, 53 files
+
+🔍 Key files:
+./frontend/app/page.tsx
+./app/frontend/page.tsx
+./app/page.tsx
+./src/app/my-route/route.ts
+./src/app/(payload)/api/[...slug]/route.ts
+./src/app/(payload)/api/graphql/route.ts
+./src/app/(payload)/api/graphql-playground/route.ts
+./src/app/(payload)/admin/[[...segments]]/page.tsx
+./src/app/(frontend)/page.tsx
+./main/src/app/my-route/route.ts
+./main/src/app/(payload)/api/[...slug]/route.ts
+./main/src/app/(payload)/api/graphql/route.ts
+./main/src/app/(payload)/api/graphql-playground/route.ts
+./main/src/app/(payload)/admin/[[...segments]]/page.tsx
+./main/src/app/(frontend)/page.tsx

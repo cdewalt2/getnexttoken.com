@@ -1,0 +1,62 @@
+{
+  "name": "",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A blank template to get started with Payload 3.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "cross-env NODE_OPTIONS=--no-deprecation next build",
+    "dev": "cross-env NODE_OPTIONS=--no-deprecation next dev",
+    "devsafe": "rm -rf .next && cross-env NODE_OPTIONS=--no-deprecation next dev",
+    "dev:hybrid": "ts-node --project tsconfig.server.json server.ts",
+    "generate:importmap": "cross-env NODE_OPTIONS=--no-deprecation payload generate:importmap",
+    "generate:types": "cross-env NODE_OPTIONS=--no-deprecation payload generate:types",
+    "lint": "cross-env NODE_OPTIONS=--no-deprecation next lint",
+    "payload": "cross-env NODE_OPTIONS=--no-deprecation payload",
+    "serve": "cross-env NODE_OPTIONS=--no-deprecation payload serve",
+    "start": "cross-env NODE_OPTIONS=--no-deprecation next dev"
+  },
+  "dependencies": {
+"payload": "3.27.0", 
+   "@payloadcms/db-mongodb": "latest",
+    "@payloadcms/next": "latest",
+    "@payloadcms/payload-cloud": "latest",
+    "@payloadcms/richtext-lexical": "latest",
+    "axios": "^1.8.4",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "fast-xml-parser": "^5.0.9",
+    "graphql": "^16.8.1",
+    "next": "15.2.0",
+    "payload": "latest",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "rss-parser": "^3.13.0",
+    "sharp": "0.32.6"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.2.0",
+    "@types/dotenv": "^6.1.1",
+    "@types/express": "^5.0.1",
+    "@types/ms": "^2.1.0",
+    "@types/node": "^22.5.4",
+    "@types/react": "19.0.10",
+    "@types/react-dom": "19.0.4",
+    "@types/xml2js": "^0.4.14",
+    "eslint": "^9.16.0",
+    "eslint-config-next": "15.2.0",
+    "prettier": "^3.4.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  },
+  "engines": {
+    "node": "^18.20.2 || >=20.9.0",
+    "pnpm": "^9"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "sharp"
+    ]
+  }
+}
